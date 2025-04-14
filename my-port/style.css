@@ -14,9 +14,7 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    transition: background-color 0.5s ease, color 0.5s ease;
 }
-
 
 
 
@@ -103,7 +101,6 @@ header {
 
 
 
-
 .dark footer {
     text-align: center;
     padding: 10px 0;
@@ -119,10 +116,12 @@ footer {
 }
 
 
-/* Estilos de navegação */
+
+
 
 
 /* Estilo base para as logos */
+
 .dark .logo-linguagem {
     transition: transform 0.4s ease-out, filter 0.4s ease-out;
     filter: grayscale(20%);
@@ -144,8 +143,6 @@ footer {
     transform: translateY(-10px) scale(1.05);
     filter: grayscale(0%) brightness(110%);
 }
-
-
 
 .dark nav ul li a  {
     color: #ffffff; /* Cor do texto do link */
@@ -183,6 +180,10 @@ nav ul li a.ativo {
     font-weight: bold; /* Destaque o link ativo */
     color: #007BFF; /* Cor do link ativo */
 }
+
+
+
+
 
 
 
@@ -226,6 +227,15 @@ section.visible {
 }
 
 /* Estilos de texto */
+
+
+h1 {
+
+    color: #ffffff; /* Azul escuro */
+    margin-bottom: 10px;
+
+
+}
 h2 {
     color: #003366; /* Azul escuro */
     margin-bottom: 10px;
@@ -263,7 +273,7 @@ img {
 /* Estilos de parallax */
 .parallax {
     background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnV2MGR2Z25tenM0dDYwMmdzYTk2Z2ZjZWd6aTliMXdidWc1NjdlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/88Fu8MtnSXI6j3ywN8/giphy.gif'); /* Substitua pelo caminho da sua imagem */
-    height: 60vh; /* Altura da seção */
+    height: 50vh; /* Altura da seção */
     
     background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
     background-position: center; /* Centraliza a imagem */
@@ -275,10 +285,8 @@ img {
     color: rgb(255, 255, 255); /* Cor do texto */
     text-align: center; /* Centraliza o texto */
     font-family: Impact 'Arial Narrow Bold';
-    line-height: 0.8;
+    line-height: 1.7;
 }
-
-
 
 
 .idioma-wrapper {
@@ -325,7 +333,7 @@ img {
     position: absolute;
     top: 35px;
     left: 0;
-    background-color: #ffffffbe;
+    background-color: #ffffff00;
     border-radius: 10px;
     padding: 6px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
