@@ -263,7 +263,7 @@ img {
 /* Estilos de parallax */
 .parallax {
     background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnV2MGR2Z25tenM0dDYwMmdzYTk2Z2ZjZWd6aTliMXdidWc1NjdlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/88Fu8MtnSXI6j3ywN8/giphy.gif'); /* Substitua pelo caminho da sua imagem */
-    height: 50vh; /* Altura da seção */
+    height: 60vh; /* Altura da seção */
     
     background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
     background-position: center; /* Centraliza a imagem */
