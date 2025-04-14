@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+
+</head>
+<body>
+    <header>
+        <h1>Robson Dariva Diniz</h1>
+        
+        <h4 data-key="modoDarkLight">Modo Dark e Light</h4>
+        <div class="trilho-wrapper">
+           <div class="trilho" id="trilho">
+               <div class="indicador"></div>
+           </div>
+       </div>
+
+       <div class="idioma-wrapper">
+        <button id="seletor-idioma">
+            <span id="bandeira-selecionada">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brasil" width="25px" />
+            </span>
+            <span class="seta">&#9662;</span>
+        </button>
+        <div class="idioma-dropdown">
+            <button class="idioma-opcao" data-linguagem="pt">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Flag_of_Brazil.svg" alt="Brasil" /> <h5>PT-BR</h5>
+            </button>
+            <button class="idioma-opcao" data-linguagem="en">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_the_United_States.svg" alt="USA"/> <h5>USA</h5>
+            </button>
+            <button class="idioma-opcao" data-linguagem="es">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Flag_of_Spain.svg" alt="España"/> <h5>ES</h5>
+            </button>
+        </div>
+    
+
+</div>
+
+
+
+       <nav aria-label="Menu principal">
+
+            <ul>
+                <li><a  href="#sobre" data-key="secaoSobre">Sobre Mim</a></li>
+                <li><a href="#ferramentaSkills" data-key="secaoFerramentaSkills">Capacitações</a></li>
+                <li><a href="#design">Design</a></li>
+                <li><a href="#contato" data-key="contato">Contato</a></li>
+                <li><a href="#redeSocial" data-key="redeSocial">Redes Sociais</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="parallax">
+            <div class="content">
+                <h1 data-key="tituloPrincipal">Bem-vindo ao Meu Portfólio</h1>
+            </div>
+        </section>
+   
+        <section id="sobre">
+            <h2 data-key="secaoSobre">Sobre Mim</h2>
+            <p data-key="secaoIntro"> Nacionalidade: Brasileiro
+                <br>
+                Idade: 20 anos
+                <br>
+                Atualmente curso Data Science atraves do programa ONE da Oracle e Alura Latam.
+                <br>
+                Atuei na área cuidando da infraestrutura física e lógica dos setores de Tecnologia Informação (T.I.)</p>
+        </section>
+
+        <section id="ferramentaSkills">
+            <h2 data-key="secaoFerramentaSkills">Capacitações</h2>
+            
+            <div class="ferramentaSkills">
+            <h4 data-key="linguagemProg">Linguagens de Programação</h4>
+            <nav>
+                
+                <!Python> 
+                <a href="https://www.python.org" title="Python">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEAUlEQVR4nM3Yb2gbZRwH8HuhIuILJzIYotJ3a5I+z3PNpXUoC6LiG/tGCJhrrmmld64g6tgLFZrm/1aYXoqKMPCF0LX0X4zgdOtz6SyiqGzgwG5z7Zq0q1LNyszdtdK1WR65rJ3pliZ39pL6wPdN3vw+/J4/9yMUZWBZXP6HERc6grjwj9ATuA7ZnpvA7csD1kfo9ihheFFm+Niig4/95ODFIUb4oOPZrk/2UNVaNBcOQLb7FnB3k1LRUA4hdk8YPvano7PvZdNBDd7ep4HbVyjeclgkXcc+I6i1RxeqABPEHMOLL5iKornQoFbY9e5HJJ1Ok5WVFXLquwu6URsdO2cqCnpC32qF+wa+JqlUqoBayqqGUA5BzNuFEw+ZiTqnFXYKR8nVVJqo6jIRB84YRMXIgUPH95qOAhth2oK6D3rNUMDA7asaCnERF/KGxXJp7OhNVwUFvf5HkDcUhp7gV8gT/MFIGtuPZfSg5HHQLEuo99/AgDIOnykJavSE3gOsL1dpm8AOt09JwtcVCZG7I0vo463b4428ufk47hZK0YLBKwWQy+V/4PY3rHvXUbIELxV1aWcgoBOlfZyzGL6xbackRNQkDSjkCZ+tBYoRxD+0JigYieVQMoZvU7A1uFiTTvGxKPnGeZ+C0Ww5lCKhfgq4fWvVRjFC7KzT639QluDhCiDtXF2ggLs7bwzgI4Wng+1ZKw7dHl1y8LHZzTC8OM3wYtIhxLrswon71ST9qozhWkUUhosUYPVhoNuXp7nwaFNnuE47GzMJ6xNzI6DuTk7v35c91bCnOMun7fuyGLwkSyheCVP0Xq1qndp2mrwT1reOOqLO+cR++8ywdXbqpIX80r81C4kGXUV15AYFWP9qJZSdO+pd+KK++dKANXc3xnQURlco6AnMld221kDhKk8PW3/fDmQmSsZoiEKe4JflUIgLfX41DvaW2rIqbV8XxbRHWsqi2kIfpsfgc+VAZqFkDNe1y3H7U9PqX972/eHCffNx24u1QaFE0RAXZXcbJUvopoLp+q0DHhc5Xup5qBFqOSshtuSgZ3e//xhsi7xTPOaCjmCzHtRc3PabipHLaORx0JI9Y3nU8Jg8rwM1H7ctbR1z742K6ecNF98JakHP9mHUs6soOdlE5PNvEXXy4P8HtXjtIslkMiS/miHqpHPzd59pqLkRUGcM1Vj4I0RDaWvl/GsbnaIPUWau6SHrkpFOZVKTBVTur5+JMtFUGEluSPYnTUWlxuoPXh60rBs56PLEgY2HEeYUjDqpaqxrI/Dx6WHb1FS/Vf/tw/D7rIQcVQEVr9QY/VRq1PbpzLD1yuVBy98XT1puzScacjKG1xWMfpUxHJUxOqJOQOt/KfAP2/wTcn/aAigAAAAASUVORK5CYII=" alt="external-python-an-interpreted-high-level-general-purpose-programming-language-logo-shadow-tal-revivo" class="logo-linguagem" ></a></li>
+                <!HTML5> 
+                <a href="https://www.mysql.com" title="HTML">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsTAAALEwEAmpwYAAADUUlEQVR4nO3WS0hUURgH8H9BkViL6EHUxqZdm7I2uYggjIokzxmZzLKZxBwr0wozsQcEJRS6KSvoQYtahELvIKLSFoaBGUSUvUwa5t6ZcR5Wjr3ti3l07jj3avdesyL84NtcOOf+5n7fnPMBI/G/hZSFyV4rLMOdUhYm60cx1MocNNwpMdToR2Vj559AeRgqdKNkBofRF7xdB/pSrC8T1tn1oziWGUX1OEBU+uvsK0konxVL9ZePY95wob5uUta4c5CuG+WyYcZwoT47lTVvVmK6bhQ5MUbi+J784q4zFRQKhTSz5+ENGjDu1ArUxw3x0nF8j7wHRkLmCKlQx4rNoa5WCVRvQXw/hqAhUBTF0J6M8tXmmUOddwpUpMzxL/XUMEriuKtC7V8hEMG22+RxpokMl6cR7bNo547xAvU2X6CazKAaklHeqoUK6vE9U40eWiNQ9YZRMkedCrVtjlKyznZTqECu6KkjZlB7VddC8UwFFfBT4GGjyHDjaSLXA+2smiJQXTaB2mMcxeBUoeyTzDV6eapAeXPEZVxkGCVlg6lQtrHGUX1ficpGCZS4YhiyDaPcDBlaJ7dv9yLy7lJnuHoh0dHMWJ5dp6DCAQH6tjmhPzkWGEb5GGZpjhuls8m7fW405dwU7UY/lK6g/K/E8y8bE1BWWIyjbBivhQq2t4qSeSsztFF1ixWUq008/1SU8OOWIBVmQuboTUYFWm8KlO9IoTaqoURBvWgUzz8Uin16YTYkjk4Vqul8vwYPPmujrnN7Yj11szpWrsR4dFGgwuvFwfl6KKj7ySj/9ePG/n0tZwTqnV3881pMo2SGK6pGd0wh3+EC8jdfih6gmqi+b0TPbxPVbyTaNVWguuP3nsxxeSioU4MNdp78ieSrWR0tafjBNaKOZqILW4l2T9O8YoJ5Yu1J0yiJ44DuybNg9C/vPf8q0VP7h4Iq041yDIDZEhuB39tBHqtAlZpGua3INYPqK4mNvd1rlbuuX9kZVplGdTowTmZYHh9jXg6G6l4T+xr+n6OJOiPr6yL7RfbF7wqvFZbI9BAZACWO94N+PYaPMsMtiaNSZpiPPxEuG1LcVmTKDAcljifx86dD5jjh4bD5V2IC/na4GSb9bcNI4F+IH7EwEUQ8imLqAAAAAElFTkSuQmCC" alt="html-5--v1" class="logo-linguagem" ></a></li>
+                <!CSS> 
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" title="CSS (Cascading Style Sheets)">
+            <img src="https://img.icons8.com/color/37/css3.png" alt="CSS (Cascading Style Sheets)"class="logo-linguagem" ></a></li> 
+                <!JavaScript> 
+                <a href="https://developer.mozilla.org/pt-BR/docs/Web/JavaScript" title="JavaScript">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAAlCAYAAADFniADAAAACXBIWXMAAAsTAAALEwEAmpwYAAABxklEQVR4nO1YSyhEYRQ+x8hrGpKFlY1mh82EErFRIoqVxShmg5Qs2GiiFBY2Fth457FRytZjkkehyaiZMbPERjYoeZTXp39+45qQhXEv9Z/6uvc/9+ver/Of8/11iVSo+OWAn6wIUoNu8JP1e1GCGCDohiA1KFFQlQqoniI1fVCWEFDmSR8M8fmQcLErcev5mqPrMXO9TyDiEDob+S3vWSSUFjAsZkasiZGbzVgeM1DU8RohxSJz72EyMTZmDBLV2yZzCfGMlXHC+jQhM4PhqGGc7xgkqtUu1+lpjHuv5N180W+6iZrs03L5OYzViT/Q6A8+QqEtsp9Eo7umDJ6+uwOCs0lOX/h5TAxjtMdAUXjF5R6hu4VhTpQccRW5qItaGiZcueX92ZYmSlRG5J78hOn+SDMdcmq8rbkoirr1EMqK5IuLbIz5AUJ9tbY9I11yykry5Lq2nEPiH32E5lqN516IcqXslR9NUSA+jnHikpy6Ki0v3DwxQVtnWTlUyaiKuvcS2h1SRPhDqcmMhUGNI6avw8FIeidGoKKYcbT6i41+uUfYnpNnnJi0zzhi68RWbc4STjd09Cn8FP9XlP8P/ktQoYJ+Fi8XAFK8Exg2ZAAAAABJRU5ErkJggg==" alt="javascript--v1"class="logo-linguagem" ></a></li>
+                <!Java> 
+                <a href="https://www.java.com/pt-BR/" title="Java SDK">
+            <img src="data:image/png;base64,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" alt="java-coffee-cup-logo--v1" class="logo-linguagem" ></a></li>
+                </nav>
+           
+
+
+            <div class="ferramentaSkills">
+            <h4 data-key="devOps">Desenvolvimento e Operacional </h4>
+                <!PostgreSQL > 
+            <a href="https://www.postgresql.org" title="PostgreSQL"> 
+            <img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/37/external-postgre-sql-a-free-and-open-source-relational-database-management-system-logo-shadow-tal-revivo.png" alt="postgreesql" class="logo-linguagem" ></a></li>
+               <!MySQL>
+            <a href="https://www.mysql.com" title="MySQL">
+            <img width="37" height="37" src="https://img.icons8.com/external-those-icons-flat-those-icons/37/external-MySQL-programming-and-development-those-icons-flat-those-icons.png" alt="external-MySQL-programming-and-development-those-icons-flat-those-icons" class="logo-linguagem" ></a></li>
+                <! Docker> 
+            <a href="https://www.docker.com" title="Docker">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAD60lEQVR4nO2Vf2wTZRjH37sbKChqgggDcTMkqAHM1K0bcUz/0FJ0WTewK/6Io4wAkQw2R6zRprQLWR1ENjc6ZS1skMmuBwOcI4ti3LIYxv4RWrphZwdjTKd0A7I7BUm2r+lhm15a1lU2mKaf5PtP37vn/eR5n7dHSJQoUaL8BzCdfpky2Q2+MCaHikwmKJPdQH9ihy+U6cwhMpmgooLhUFvlRG1V+aNryfDOGfNPKEO7mTK2t/mj/+GzsDUBitQLsWQ8oNRVHZTaAn+M7W2SmdM2t0jWsy1hZ5Cx8cWMje8l9X88PukEY9ihNIblRxibANrGfzPpBGmWb/TK+TKFExIiM1pdtSgwVM6XrZSm1u2P/mQrXXza7YsoGLj+bm2dpIZ6z4LA8gwrXAsUpDkhl2wDTequx4vhwITpWEA31BaIIgEdozc1tEme0Ta3SDrqvSiSGlUdEkEbf10ieKujHv9vrHB1ykF+0T0TpFm+PVAwKCzfN2oXJ1zQxr85mqB45PfkiLkrD5O6oWdom6C9ffeE4P9QhuVVo7Z8YuOmbfwpxibUxrBDL4bsGM3xavG6H7yC6dbzQUWmVV/C1AOXQ27wgKXbOzOh5gjT9l0M+Y631v3Vfd5nRgj35xM+D5lC8VCqQjUrSHCu8cjGJwvMSFiVi6TXVFi4YTvitlow/8P9WLh+O5Jez8ZzKzWILzBjno5FrOGouP50rh4yRRaeXZ2HuMI9mGM8hjlFDeJ7i9/ZisT0bCzIK8Vc/WHM3NGMWaYTmK+tQcKqdUhMV+OpdYZ+mVyZnyxXFsqWZ5Qny5X9MnlGj0yuLEtZoVziF3xUdyR95kf1uNuJy6uokikyVKGTFfAJ5DCVLnGMSC7CRGdX5xAB6FFvq2QOS13nx1o8sboLLg+Prss8XqjuilyuxAF6d8/bJBJiKnr0Y91gn30Q+TojCnRF2GsfjFiQKu/+jkQMQNG7zgmhCjKmHzHP0IQlH9fivqKTWHu8F2ecnWLWNPZGJljq+iXst/Z2xFY48lI3FyNlwzbINB9gaU4hlr6hQcqKlUherhQze/NecSNZTReSaiI83lLXIKl0P0buhDTT4Z+SFZlIzXwLL2Vr8OrafGRqS5Cz+xAKjjsRaz737y5FmetnYvXMIOPBK00DTTrHDRidN4Oi+nYgMrGdZ4cZ84UvyHjz/FHP+jWt126EkkyqG8Pc7XQO0xXd35PPL8STiSTx2MAW5Ymrl947xQ8bzt4SNDhvIqvJg0fKOqSX6dPOv+hydwdj7t5BuN8fJHebxV/9NjulwbNxWeNgWdrXHnZZo4ebYf31faayL51U9t/Z8EeJEuV/yt9fVlmYh7QEbwAAAABJRU5ErkJggg==" alt="Docker" class="logo-linguagem" ></a></li>
+                <!Apache>
+            <a href="https://www.apache.org" title="Apache">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMklEQVR4nM3Yf1CTdRzA8a9mYPWH9IMTvI5CEXXMGTFWotty/NruGCrwCMttOmIg21DkVyVbqy2COzcDnJsYuIEMcgUleDZvC6bgxU5mZZ1wER0iMU8w0ASPiH27ZzEa3XX9t+/e/3z/fF73uec+930eAHzQd0XrIkffCzHNqIIG52qf3Ab8JbtoQ5TjaNid3ypD7s+qg+D8ycABCMEK1C7QK45eZ5dsHPmhLMw2XRW6sIiDUAs2IYV1H6Cv7skjXbdLIv90vh8+MF0VMreE0wEKUpxNQDnTm0eCjsObeicV6399UBUKl3B1YAMymIVLTbdlUyCO++XtLW2TivXQg/ujNmACysFKJLBL+5kvWrg7p3DctbytPc7yqClv3HxtgAYJDAKw4lJmotnKo8LubMrcT0Ux7U4pEXpwM+qghceawAgkuI6MFMFXWYkQx13Nec04Uhq7sBy3pgkJzMTEgjvS2PdxnIW38+5NyY7Pb5fFwn9wITOz1c+GIcG1pWL1nelsiOO6uNSmoULajDduujK0AAnsMxaP3M7OWHDjMhOH7UJGy8+FNOjGlRMfT3wQrn9YERKMBHeexetuT8UgjjNnJTb9eCjp3lAhzTVSFusalxIfTirCf3ceX/uMz2HNDCHLxOJBNy4tZegKj9k4IE6GS5OTEuGEIrwGyeowxgv7PbiONHaj4y32sDduXEocv1sRvtbnOD1dxDQmCOEibuzyvt1nbgr3QC/coPMY8TBAUSNNYvXg2lIzDNe42Lf/wk2NSbf6/gai31602UCXuBZxjzr3ZGocBzhwCXeEOna7NPYQQFHD9mJ1I10C3Tgm19iFcXuW4QppcLQ0huNzmAnDnqiPK3biuOYEoauNyVf1cQ7Oe+OGCqlTo0dff8rnOO2rMmpDXAl0Ty4+x2pm51zo42TDZbgjNAVAkY5crvDgWhh56it78x95426Jkh7cEsc/jwYXU27DcQa6eLyTVXCqJ10MvXGDoqR8JDA5kK88HSOddU+OJtZa2EVOb9z3wt3N+HL2OawmoiZQE618SUeWuurjSlxfJpTJu1JLoAfXz+fouuX0VQBF1YTjklOkD/mnyVJYH1dsMyfLbvyNEznsbwpSbvCzOP252BokODVB/ZyGpLyH487teEdmZspcX7OLr/ekiVq/ycoedhzksAHKNNuUn+jI5TMXdilrLjNl0D25NJG9jyPgI0PJ6fJVJwiq/SdJyota8rGWTkbFHQ/uarp4pG+fAN0/EFVk3QsnCKpcDUnZq6coSi8yPrKak2WtVnaxxILlonnPPMlD657GTy2pIv8L+scvd8ZXvgH8rbroqjz8NGHyAOBPaTdXE43k2gTgj52L1heYCCb/mpin5lcM7wJ/rDGqdYsxugntkv2vzhJMEj1dvxr4Y3rieTRfUeB/aogwBRuiPt3l6wf/BS4jccJ1FQteAAAAAElFTkSuQmCC" alt="external-apache-a-free-and-open-source-cross-platform-web-server-software-logo-shadow-tal-revivo" class="logo-linguagem" ></a></li>
+
+                
+
+
+            <div class="ferramentaSkills">
+                <h3 data-key="sistemOps">Sistemas Operacionais</h3>
+              
+                <h5>Kernel Linux & Open Source</h5>
+
+
+                <!Linux>
+            <a href="https://www.linux.org" title="Linux">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEP0lEQVR4nO3YfUwTZxwH8HPTu87pTMjiWzBzlrbShJfeUe7aJlRlMyhjgJOKSoJsCnMuUzGLooYxfAlxGS/bIoO5F0THnGbLlkm6CfaKjZoQN4IbiWzUwYYoFJABuij0u9zRAgFKEQp1Cb/k909zz/N8cr/n7UoQ0zEd/9+YoQhil/oxWilBEE8Qj0XExT0pV3G7ZTRnldMchJSpuCYZzaXp9fqZXrXJae6QEzU82SJvv7W7rnEcpAxHe8UmDQlZMhTjr9aBCQsf+E3FHvMKzo/RSsMiomAsNyNiXTwUjAYmyxXcutOCmE2JffOPZsu8glseqJa/eywbsbHrkJtfiBWRsXg/JxebNycg7+MTzsVx0Ts4hlm0c99BvPX6K+BPrUJ+uh8Ks7chOjoG+zKOOMrKXfUKTqlUklviA9BdNg9dRgqdRhIwU6g9uxh7kpWOsnJdfn4RlFeA57IW9jR/14dq+Z6E5cNZqPuSxMWiVf2LQsaERk45TKnUz1kT9ULH3z9qUFlAoq6EhN0yH921mbDW34QyVNfreHulU45bzmhTXzJs6rK12dBpPYFOayFabQ2wtXeIuT1176AthYuYMpgsSBvsr9b9e/i9nH7M0CwtMw2UlmYblRznM+mwRQwzW85oav3VOnt1zQ2XuObWdujXRg8AVeyZScfJaC5LGEzY41zBnJmTX4gALmxqFodCpV0spzU23erInr9u3XGLq29sgvbFSBgSt/Y4LgO/C2fypODkNHd4RWTsjZNnzrmFOXPPwQysXb8R8UnJ9wSgIjh0vcdhvhz3lHBXO5B59B/h/Bwr7rPTX4kl/aCg70hT0JrzHsfJVWyCgtFe/7S4ZMwwIS/wl0SU0E7EhWi7PF5aGc2dDNKuvFZ1veaRcFcqf4FhyzZkHy/sXxjLAjXzPQYDiBl5aUsvJxgCHvxc/dsj4SqrqkVg1IYE54bc7dErPMxkmnB+PiiX2FOSdLh6rWpMsHs1qai/vANJqfsRl7ILEdHhjR8deM6Ir4mJlxWXqGUijKd6BZyQDd88A124Hj/8VO4WZ7csgJ2nsCbhVcQkJdqt3y4U+wBPrZwYjCfTnaChWXTIF/4hWuQe/2R0XMU88fnb533QdWHu4D4yJoij3nCF6+UliI0OFOeQyxK3tY3Y1pH3YZ61Yfw4syRslM5RU+KDlJ270NRsGwa73dKK/Pys0XDOfG2cb458x13nefufx9vpmSivsOCPmw3iyiz4ohirYwx4c6v6/qjteeosTHOeHS/O6A7XVjr7oatv1qO7pbUjo8g6mKiJ3e9gliwBT2WCJ819c2T4QA9Nkg65it0rJsNul9FssixYs1FOh+44fcT38xFgp2Ah5k4INgxqIiTgyZfBk8UwU3cHlSbHZZuypxfATP7peLYdJirJo6gRB/2VIFEh0cE0MwQY/R8lYbMVkW6em47pIB6D+A9LbtdN2/rBuwAAAABJRU5ErkJggg==" alt="Linux and Kernel" class="logo-linguagem"/></a></li> 
+            <!JavaScript> 
+
+                
+                <!Debian 9>
+            <a href="https://www.debian.org/releases/stretch/" title="Debian 9">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAADZklEQVR4nO2YX2gUdxDHt7WWalpKquafO7MxUoPpS9uAoCJUqvQfBW0JiE287MxmMWmpVfwDKlpaS2mJWnwQ+lAo9KkPLb75pBQKLSiIgj6oD4pNsjN7VgKC8cF6Ze5PvITcJubu8IR8YR/ubn6zn/vNb/7sOs6c5vSUKd1K7Qr0lSJ/o0g9see/J0hvx0t7X31iUJHLqwTptCA/VOTMlBfQ3wr+NnFp0+WOruerDjXU0guKfDwRaopLkP9UN3inamAjHq8U5KGJN6Z/BWi/esHrBj6K/fUxhs2Rx28J8PeKlC4CfCjgf1FxMIVwuQLJoxvRPzmoVFPSuqhte4MinZq4i0FYMbCM4zwjyH8U7cD5EfQ7Zr6+a54C/14EeO9x1pdUGqhFXX43v1v/CdJBg31cPze81AsKfKXoD/5aNlzkpVoF6WrWqUsD5fiKkT7In9PLAvRdxjn87Kyd2Q7la5g5PDadvaC/QZF/EOCf7FwNN4cLJ9so0iUFuh+5tMXCPWu44eZwsQBHBpfGoDPJVpF+FOATcUuwwj7faQtfVuS1kwGtDOWiwH6mM5w/a7jIo/X5YnomyU6AdihwakY+0ef8udvrlCNF2pOD87eVshlq6VlkpWKmPgXpk3xy/VwmXPBp1pFHq0vauDQgSH2JfopqoSAH+Ww9VBG4CINlJW2Av07a2cmKkT+3hLi9NHArA9fYXVfKRoB2KdBgqd+tpU3wCfSLAp+95XYtKAuuEIKpSkJBlsWCdL24MNsEYpleyNrC9xHwh4J0Vz3+qKxMNYnHWw0uqdXccvkVAfpNgHeOQzR210UQvFZsN9LkL1Gkcwr8ZVnFdxwOeKPBxR5RKZvYozdyAyf/pcifTdXaFOljBb6pyEczzuHnnErIQpLtp8AnkuxGsb/eQmZnSYAv2LRiHUKQvhXgi4J8zfqzU2llnQONDLeFOO3k4vmbrfIr0hFF2meZGWPvmxUJY1IhtoNsQ+SM1nipJoPSJQMvOtVUrgPwvVzL6Vvj1JoUaLAiLacaSrfTSzaWK/BYoX7VlOzJSZAf2ASbmcUkXHVlRyMLL/ABpxZl04QCj1mld2pRCpzKZfD0o/sTkUK43F5H2CuH2OP3nVpUlHtnclKRdscQrCt7FKqWIptG2rY31GQ2z2lOzvT6Hy5gCo58pnddAAAAAElFTkSuQmCC" alt="Debian 9" class="logo-linguagem"/></a></li>
+               
+                <!Kali Linux> 
+            <a href="https://www.kali.org/docs/introduction/what-is-kali-linux/" title="Kali Linux">
+            <img src="https://img.icons8.com/color/40/kali-linux.png" alt="Kali Linux" class="logo-linguagem"/></a></li>   
+                
+                <!Ubuntu>
+            <a href="https://ubuntu.com/download/server#how-to-install-latest" title="Ubuntu">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAnCAYAAACMo1E1AAAACXBIWXMAAAsTAAALEwEAmpwYAAAD+0lEQVR4nO1Y22sUVxyeB/0LvJ2ziUm9RNRC1VpKSx8iCHHPyUaj0lYTU5Vaki00eEEFQV8EURG8bOJDq+bBF7W0VC1oa1AUavogiMZWrFW8ZM5kdjfu6iabzU6yPzln4yRxd2bObMaAkA8Os8uc5Hz7/S7fb0ZRxjGOIcBiZaJK8BcqwTsYRSdVii8ygq4MXk9odNp2fh/KlQnKWKGD+OaoFDcxiroYxeC4CIry/c8ri8reGSnmR1NUgltUggekSL21VIL7hcIBPNlTYh1+31KVYK0QUixXyQgjiHhCjPlRsFC1mJ2KfhQcNTEvSbFckpsKI0aR31IxInd4OLgEYod+gM41H1rsQamOgO9zt4pNUSkOj0aVcHAJmOjrBa16hpV6mqsi4VUpS6Lz63kQOxCExM/N0HPpNHT/chyijcsgHto+RA4A9I2f2vwf9JN8HxNl70Cs0gfaqlnQH1HhbaQf/wtdu2sA+g3x3XjyALSq6bYFItUHVYKbHdWqXQA9F1vE5/jhzZAPPb+3QKRxGcT214NW/YFEFFDI0ZKcOj8/KP34H0Hgxb7vhIKpW1eh7+5fkLz+m7iCkRb3M8luMJ79B+n/20FbOdOeHEFRW6vjXuj0CxNnjprqDLzQRWhZoHjEHr1uEfS2XR6hZOLsMUf1bCuXm7WtaqvLINPzyjyw9+YloVz+nCyC3r//MPdmeMWuLnNSb5slOe59OX+wohSiWwOg1y0Eff0nAJlM9jAjDfq6hbaH6d98bIaYI7a/wSnvrKtWjDvDN1cVi0p7g5dNO0VecfDckmk1PA24wnzFDn7vRO6CnXKtI6ryyzkwHKnbN+Dlyb3ic/Lar1Lk3C3U6lK5+ya5+LEdkLx+flC5m94rR9B5VzmnLS+F6JZKkV/6hqGcA55zdYvsc279Yu9yznW1tl12qNY/vatWuT53xDyQN1hteQloVSU5ig0nxsHDO6o+JxyCoKijQzy6J3wzspmAtqIUjEft0NfelnWI9jbTUzPJBBhPH0D64R0Zh4g4PgxlH17sf2FnzUcQP74rq+S5EORD94VTWW890GA5LrnyVndTCRYFkUnEc4hx7+3aUwsw0D8Y/ofA7KYSio1nFcWzFRnkdQorFb+aKyYPriCf5/hcF22scDvP/ShFTIQ2gCerFOuyBFmeFW6QnIQpZh3VvknS5ARBP66QCi+1Wj4I15cPPkPMt1Is1emf+plSCBhF9aNRjzksleJvCyJmKkjxWkZQ0ltiKKXRaRsUL8Cbo1dP/CrFrOBQ2hUJ975C81Cl2OBV6Tr53YD3I0ZRyMlJRrwboSgk3ce8AJQrE3i4uVlzRfm4w9/PiWv2+zZ+f0zfz43jfcBrgcuRa6YWEREAAAAASUVORK5CYII=" alt="Ubuntu" class="logo-linguagem"/></a></li>
+            
+            
+            <h5>Microsoft Windows</h5>
+                <! Windows Server> 
+            <a href="https://www.microsoft.com/pt-br/windows-server#overview" title="Windows Server">
+            <img src="https://img.icons8.com/pulsar-gradient/42/server-windows.png" alt="Windows Server" class="logo-linguagem"/></a></li>
+            
+            
+            <! Windows 10> 
+            <a href="https://www.microsoft.com/pt-br/software-download/windows10" title="Windows 10">
+            <img src=" https://img.icons8.com/fluency/42/windows-10.png" alt="Windows 10" class="logo-linguagem"/></a></li>
+           
+
+        <div class="ferramentaSkill">
+        <h5 data-key="virtuMach">Virtualização de Máquinas<h5>
+
+
+            <! VmWare> 
+            <a href="https://www.vmware.com" title="VmWare">
+            <img src="https://img.icons8.com/fluency/42/vmware-workstation-player.png" alt="VmWare" class="logo-linguagem"/></a></li>
+
+
+            <! VirtualBox> 
+            <a href="https://www.virtualbox.org" title="VirtualBox">
+            <img src="https://img.icons8.com/color/42/virtualbox.png" alt="VirtualBox" class="logo-linguagem"/></a></li>
+           
+  
+                </div>
+
+
+        </section>
+
+        <section id="contato">
+            <h2 data-key="contato">Contato</h2>
+            <!Linkedin>
+            <a href="https://www.linkedin.com/in/robson-dariva-diniz/" title="Linkedin">
+                <img src="https://img.icons8.com/color/40/linkedin.png" alt="Linkedin" class="logo-linguagem"/></a></li>
+
+
+            <! Link contato Gmail>
+                <a href="mailto:robsondariva87@gmail.com?subject=Ol%C3%A1,+Robson!!" title="Gmail">
+                <img src="https://img.icons8.com/fluency/40/gmail-new.png" alt="Gmail" class="logo-linguagem"/></a></li>
+
+        
+        </section>
+
+        <section id="redeSocial">
+            <h2 data-key="redeSocial">Redes Sociais</h2>
+            
+            <!Spotify>
+            <a href="https://open.spotify.com/user/22kgidju4cwnxohdnfmkvt65y" title="Spotify">
+                <img src="https://img.icons8.com/fluency/42/spotify.png" alt="Spotify" class="logo-linguagem"/></a></li>
+            <!GiHub>
+            <a href="https://github.com/lnxrobs" title="GitHub">
+                <img src="https://img.icons8.com/ios-filled/40/github.png" alt="GitHub" class="logo-linguagem"/></a></li>
+                <br>
+            <!Instagram> 
+        <a href="https://www.instagram.com/lnx.robson/" title="Instagram">
+        <img src="https://img.icons8.com/3d-fluency/42/instagram-new.png" alt="Instagram" class="logo-linguagem"/></a></li>
+            
+         
+         
+
+        </section>
+
+        </section>
+
+  
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Robson D. Diniz. Todos os direitos reservados.</p>
+    </footer>
+
+
+    <script src="script.js"></script>
+
+    
+</body>
+</html>
