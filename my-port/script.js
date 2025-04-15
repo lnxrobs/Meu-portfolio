@@ -1,16 +1,12 @@
-let trilho = document.getElementById('trilho')
-let body = document.querySelector('body')
+let trilho = document.getElementById('trilho');
+let body = document.querySelector('body');
 
+trilho.addEventListener('click', () => {
+    trilho.classList.toggle('dark');
+    body.classList.toggle('dark');
+});
 
-trilho.addEventListener('click', ()=>{
-
-    trilho.classList.toggle('dark')
-    body.classList.toggle('dark')
-
-
-
-})
-
+// Visibilidade das seções ao rolar a página
 window.addEventListener('scroll', () => {
     const secoes = document.querySelectorAll('section');
     secoes.forEach(secao => {
@@ -23,7 +19,7 @@ window.addEventListener('scroll', () => {
     });
 });
 
-// Torne a primeira seção visível ao carregar a página
+// Torna a primeira seção visível ao carregar a página
 window.addEventListener('load', () => {
     const secoes = document.querySelectorAll('section');
     if (secoes.length > 0) {
@@ -31,29 +27,17 @@ window.addEventListener('load', () => {
     }
 });
 
-
-
-
-
-
-
-
+// Abre e fecha o dropdown de idiomas
 document.getElementById('seletor-idioma').addEventListener('click', function() {
     this.classList.toggle('active');
     const dropdown = document.querySelector('.idioma-dropdown');
     dropdown.style.display = dropdown.style.display === 'block' ? 'none' : 'block';
 });
 
-document.querySelectorAll('.idioma-opcao').forEach(button => {
-    button.addEventListener('click', function() {
-        const idioma = this.getAttribute('data-linguagem');
-        mudarIdioma(idioma);  // Função para mudar o idioma
-        document.querySelector('.idioma-dropdown').style.display = 'none';  // Fecha o dropdown após a seleção
-    });
-});
-
+// Função para mudar o idioma
 function mudarIdioma(idioma) {
-    // Dicionário de traduções
+   
+
     const traducoes = {
         pt: {
             tituloPrincipal: "Bem-vindo ao Meu Portfólio",
@@ -74,7 +58,7 @@ function mudarIdioma(idioma) {
         
         en: {
             tituloPrincipal: "Welcome to My Portfolio",
-            modoDarkLight: "Mode Dark & Light",
+            modoDarkLight: "Dark and Light Mode",
             secaoSobre: "About Me",
             secaoFerramentaSkills: "Skills",
             contato: "Contact",
@@ -116,9 +100,7 @@ function mudarIdioma(idioma) {
     });
 }
 
-
-
-
+// Event listeners para cada botão de idioma
 document.querySelectorAll('.idioma-opcao').forEach(button => {
     button.addEventListener('click', function() {
         const idioma = this.getAttribute('data-linguagem');
@@ -130,4 +112,15 @@ document.querySelectorAll('.idioma-opcao').forEach(button => {
         const bandeira = this.querySelector('img').src; // Pega o src da bandeira clicada
         bandeiraSelecionada.innerHTML = `<img src="${bandeira}" alt="${idioma}" width="25px" />`;
     });
+});
+
+// Botão para redirecionar
+document.getElementById('portal-button').addEventListener('click', () => {
+    const portal = document.getElementById('portal-animation');
+    portal.classList.remove('hidden');
+  
+
+    setTimeout(() => {
+      window.location.href = 'https://lnxrobs.github.io/Meu-portifoliopessoal/my-port-pessoal/';
+    }, 800); 
 });
