@@ -1,0 +1,480 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos do corpo */
+body {
+    font-family: 'Times New Roman', Times, serif;
+    line-height: 2.0;
+    background-color: #000000; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+
+
+body.dark {
+    background-color: #fffefe;
+    color: #fffefe;
+}
+
+.trilho{
+    width: 50px;
+    height: 25px;
+    background-color: #4d4d4d;
+    border-radius: 25px;
+    position: relative;
+    cursor: pointer;}
+
+
+.trilho .indicador{
+    width: 25px;
+    height: 25px;
+    background-color: #000;
+    border-radius:50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+
+.trilho {
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+.trilho.dark{
+background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador {
+    left: 25px;
+    background-color: #fff;
+}
+
+
+.trilho-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 15px 12px;
+}
+
+
+body.dark h1 {
+
+color: #ffffff;
+}
+
+body.dark p {
+    color: #000000; /* Cor do texto dos parágrafos */
+}
+
+
+
+.dark header {
+    background: #000000; /* Cor de fundo do cabeçalho */
+    color: #fffefe; /* Cor do texto do cabeçalho */
+    padding: 30px 0px;
+    text-align: center;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background: #ffffffb4; /* Cor de fundo do cabeçalho */
+    color: #000000; /* Cor do texto do cabeçalho */
+    padding: 30px 0px;
+    text-align: center;
+}
+
+
+
+
+
+.dark footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #003542; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #0a5568; /* Cor de fundo do rodapé */
+    color: #ffffff; /* Cor do texto do rodapé */
+}
+
+
+/* Estilos de navegação */
+
+
+/* Estilo base para as logos */
+.dark .logo-linguagem {
+    transition: transform 0.4s ease-out, filter 0.4s ease-out;
+    filter: grayscale(20%);
+}
+
+.dark .logo-linguagem:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: grayscale(0%) brightness(110%);
+}
+
+
+
+.logo-linguagem {
+    transition: transform 0.4s ease-out, filter 0.4s ease-out;
+    filter: grayscale(20%);
+}
+
+.logo-linguagem:hover {
+    transform: translateY(-10px) scale(1.05);
+    filter: grayscale(0%) brightness(110%);
+}
+
+
+
+.dark nav ul li a  {
+    color: #ffffff; /* Cor do texto do link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin:  0 15px;
+    display: inline-block;
+}
+
+
+.dark nav ul li a:hover,
+.dark nav ul li a:focus {
+    color: #165eaa; /* Cor ao passar o mouse */
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}
+
+.dark nav ul li a.ativo {
+    font-weight: bold; /* Destaque o link ativo */
+    color: #007BFF; /* Cor do link ativo */
+}
+
+
+
+
+
+nav ul li a {
+    color: #000000; /* Cor do texto do link */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+
+nav ul li a:hover,
+nav ul li a:focus {
+    color: #b61919; /* Cor ao passar o mouse */
+    text-decoration: none; /* Sublinha ao passar o mouse */
+}
+
+nav ul li a.ativo {
+    font-weight: bold; /* Destaque o link ativo */
+    color: #960000; /* Cor do link ativo */
+}
+
+
+
+/* Estilos do conteúdo principal */
+main {
+    flex: 1; /* Faz o main ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza o conteúdo */
+    padding: 40px;
+}
+
+/* Estilos das seções */
+section {
+    max-width: 950px; /* Limita a largura da seção */
+    width: 100%; /* Faz a seção ocupar 100% da largura disponível */
+    margin: 75px 0px;
+    background-color: #d3d3d3e3; /* Fundo para seções */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Começa deslocada para baixo */
+    transition: opacity 0.7s ease, transform 0.7s ease; /* Transição suave */
+}
+
+.dark section {
+    max-width: 950px; /* Limita a largura da seção */
+    width: 100%; /* Faz a seção ocupar 100% da largura disponível */
+    margin: 75px 0;
+    background-color: #6464646c; /* Fundo para seções */
+    padding: 30px;
+    border-radius: 12px; /* Bordas arredondadas */
+    opacity: 0; /* Começa invisível */
+    transform: translateY(50px); /* Começa deslocada para baixo */
+    transition: opacity 0.9s ease, transform 0.9s ease; /* Transição suave */
+}
+
+section.visible {
+    opacity: 1; /* Torna a seção visível */
+    transform: translateY(0); /* Move a seção para a posição original */
+}
+
+/* Estilos de texto */
+h1 {
+    color: #b8b8b8de;
+}
+h2 {
+    color: #003366; 
+    margin-bottom: 10px;
+}
+
+h3 {
+    color: #003366; 
+}
+
+h4 {
+    color: #003542; 
+}
+
+h5 {
+    color: #2d798b; 
+}
+
+p {
+    color: #000000; 
+}
+
+
+
+/* Estilos de imagens */
+img {
+    max-width: 100%; /* Faz as imagens se ajustarem ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+    margin: 12px 2px; /* Espaçamento entre as imagens */
+}
+
+
+/* Estilos de parallax */
+.parallax {
+    background-image: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnV2MGR2Z25tenM0dDYwMmdzYTk2Z2ZjZWd6aTliMXdidWc1NjdlbCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/88Fu8MtnSXI6j3ywN8/giphy.gif'); /* Substitua pelo caminho da sua imagem */
+    height: 60vh; /* Altura da seção */
+    
+    background-attachment: fixed; /* Mantém a imagem fixa durante a rolagem */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Não repete a imagem */
+    background-size: cover; /* Cobre toda a seção */
+    display: flex;
+    align-items: center; /* Centraliza o conteúdo y */
+    justify-content: center; /* Centraliza o conteúdo z */
+    color: rgb(255, 255, 255); 
+    text-align: center; /* Centraliza o texto */
+    font-family: Impact 'Arial Narrow Bold';
+    line-height: 2.0;
+}
+
+
+
+
+
+.idioma-wrapper {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+}
+
+#seletor-idioma {
+    background-color: transparent;
+    border: none;
+    padding: 2px 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px; /* Aumenta o espaço entre a bandeira e a seta */
+    font-size: 2px;
+    transition: background-color 0.3s ease;
+}
+
+#seletor-idioma:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#seletor-idioma .seta {
+    font-size: 18px;
+    color: #000000;
+}
+
+.dark #seletor-idioma .seta {
+    color: #ffffff;
+}
+
+#bandeira-selecionada img {
+    width: 25px;
+    height: auto;
+    border-radius: 3px;
+}
+
+.idioma-dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background-color: #ffffffbe;
+    border-radius: 10px;
+    padding: 6px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1001;
+    width: 75px;
+}
+
+.idioma-opcao {
+    background: transparent;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.5s ease;
+}
+
+.idioma-opcao img {
+    width: 20px;
+    height: auto;
+    border-radius: 2px;
+}
+
+.idioma-opcao:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#seletor-idioma.active + .idioma-dropdown {
+    display: none;
+}
+
+
+
+
+
+
+
+.btn-cyberpunk-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0 20px 0;
+}
+
+
+.dark .btn-cyberpunk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 65px; /* Tamanho igual ao trilho */
+    height: 26px; /* Altura igual ao trilho */
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 25px; /* Bordas arredondadas */
+    color: #00eeffec;
+    font-size: 20px; /* Menor, para combinar com o estilo minimalista */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Para esconder a parte da animação que ultrapassa */
+}
+
+.dark .btn-cyberpunk:hover {
+    color: #15abb6;
+    border-color: #16707c;
+}
+
+.dark .btn-cyberpunk:active {
+    transform: scale(0.95);
+}
+
+.dark .btn-cyberpunk:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(12, 151, 206, 0.836) 0%, rgba(0, 132, 255, 0) 80%);
+    transition: all 0.6s ease-out;
+    transform: scale(0);
+    z-index: 0;
+}
+
+.btn-cyberpunk {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    width: 65px; /* Tamanho igual ao trilho */
+    height: 26px; /* Altura igual ao trilho */
+    background-color: transparent;
+    border: 2px solid transparent;
+    border-radius: 25px; /* Bordas arredondadas */
+    color: #960000;
+    font-size: 20px; /* Menor, para combinar com o estilo minimalista */
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease;
+    overflow: hidden; /* Para esconder a parte da animação que ultrapassa */
+}
+
+.btn-cyberpunk:before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.5) 0%, rgba(255, 0, 0, 0) 80%);
+    transition: all 0.6s ease-out;
+    transform: scale(0);
+    z-index: 0;
+}
+
+.btn-cyberpunk:hover:before {
+    transition: transform 0.6s ease-out, opacity 0.3s ease;
+    transform: scale(1);
+}
+
+.btn-cyberpunk span {
+    z-index: 1; /* Garante que o texto fique sobre a animação */
+    position: relative;
+}
+
+.btn-cyberpunk:hover {
+    color: #960000;
+    border-color: #ad0000;
+}
+
+.btn-cyberpunk:active {
+    transform: scale(0.95);
+}
