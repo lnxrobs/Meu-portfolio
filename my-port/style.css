@@ -90,14 +90,13 @@ body.dark p {
     text-align: center;
 }
 
-/* Estilos do cabeçalho */
+
 header {
     background: #ffffff; /* Cor de fundo do cabeçalho */
     color: #000000; /* Cor do texto do cabeçalho */
     padding: 30px 0;
     text-align: center;
 }
-
 
 
 
@@ -177,8 +176,8 @@ nav ul li a:focus {
 }
 
 nav ul li a.ativo {
-    font-weight: bold; /* Destaque o link ativo */
-    color: #007BFF; /* Cor do link ativo */
+    font-weight: bold; /* Destaque o link  */
+    color: #007BFF; /* Cor do link  */
 }
 
 
@@ -199,26 +198,26 @@ main {
 /* Estilos das seções */
 section {
     max-width: 950px; /* Limita a largura da seção */
-    width: 100%; /* Faz a seção ocupar 100% da largura disponível */
+    width: 100%; /* Faz a seção ocupar a largura disponível */
     margin: 43px 0;
     background-color: #ffffff; /* Fundo para seções */
     padding: 30px;
-    border-radius: 12px; /* Bordas arredondadas */
+    border-radius: 12px; 
     opacity: 0; /* Começa invisível */
     transform: translateY(50px); /* Começa deslocada para baixo */
     transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
 }
 
 .dark section {
-    max-width: 950px; /* Limita a largura da seção */
-    width: 100%; /* Faz a seção ocupar 100% da largura disponível */
+    max-width: 950px; 
+    width: 100%; 
     margin: 43px 0;
-    background-color: #6464646c; /* Fundo para seções */
+    background-color: #6464646c; 
     padding: 30px;
-    border-radius: 12px; /* Bordas arredondadas */
-    opacity: 0; /* Começa invisível */
-    transform: translateY(50px); /* Começa deslocada para baixo */
-    transition: opacity 0.5s ease, transform 0.5s ease; /* Transição suave */
+    border-radius: 12px; 
+    opacity: 0; 
+    transform: translateY(50px); 
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 section.visible {
@@ -226,45 +225,38 @@ section.visible {
     transform: translateY(0); /* Move a seção para a posição original */
 }
 
-/* Estilos de texto */
-
-
-h1 {
-
-    color: #ffffff; /* Azul escuro */
-    margin-bottom: 10px;
 
 
 }
 h2 {
-    color: #003366; /* Azul escuro */
+    color: #003366; 
     margin-bottom: 10px;
 }
 
 h3 {
-    color: #003366; /* Azul escuro */
+    color: #003366; 
 }
 
 h4 {
-    color: #003542; /* Cor específica para h4 */
+    color: #003542; 
 }
 
 h5 {
-    color: #2d798b; /* Cor específica para h5 */
+    color: #2d798b; 
 }
 
 p {
     color: #000000; /* Cor do texto dos parágrafos */
 }
 
-/* Estilos de projetos */
+
 .projeto {
     margin-bottom: 18px;
 }
 
 /* Estilos de imagens */
 img {
-    max-width: 100%; /* Faz as imagens se ajustarem ao tamanho do contêiner */
+    max-width: 100%; /* Faz a imagen se ajustar ao tamanho do contêiner */
     height: auto; /* Mantém a proporção das imagens */
     margin: 12px 0; /* Espaçamento entre as imagens */
 }
@@ -280,9 +272,9 @@ img {
     background-repeat: no-repeat; /* Não repete a imagem */
     background-size: cover; /* Cobre toda a seção */
     display: flex;
-    align-items: center; /* Centraliza o conteúdo verticalmente */
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    color: rgb(255, 255, 255); /* Cor do texto */
+    align-items: center; /* Centraliza o conteúdo y */
+    justify-content: center; /* Centraliza o conteúdo z */
+    color: rgb(255, 255, 255); 
     text-align: center; /* Centraliza o texto */
     font-family: Impact 'Arial Narrow Bold';
     line-height: 1.7;
