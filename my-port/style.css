@@ -78,6 +78,20 @@ body.dark h1 {
 color: #ffffff;
 }
 
+.dark h2 {
+    color: #003542; 
+    margin-bottom: 10px;
+}
+
+.dark h3 {
+    color: #003542; 
+}
+
+.dark h4 {
+    color: #003542; 
+}
+
+
 body.dark p {
     color: #000000; /* Cor do texto dos parágrafos */
 }
@@ -113,7 +127,7 @@ header {
 footer {
     text-align: center;
     padding: 10px 0;
-    background: #0a5568; /* Cor de fundo do rodapé */
+    background: #971212; /* Cor de fundo do rodapé */
     color: #ffffff; /* Cor do texto do rodapé */
 }
 
@@ -154,18 +168,6 @@ footer {
 }
 
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-nav ul li {
-    margin:  0 15px;
-    display: inline-block;
-}
-
 
 .dark nav ul li a:hover,
 .dark nav ul li a:focus {
@@ -180,6 +182,18 @@ nav ul li {
 
 
 
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin:  0 15px;
+    display: inline-block;
+}
 
 
 nav ul li a {
@@ -243,23 +257,23 @@ section.visible {
 
 /* Estilos de texto */
 h1 {
-    color: #b8b8b8de;
+    color: #5c5c5cbb;
 }
 h2 {
-    color: #003366; 
+    color: #971212; 
     margin-bottom: 10px;
 }
 
 h3 {
-    color: #003366; 
+    color: #a80000; 
 }
 
 h4 {
-    color: #003542; 
+    color: #000000; 
 }
 
 h5 {
-    color: #2d798b; 
+    color: #000000; 
 }
 
 p {
